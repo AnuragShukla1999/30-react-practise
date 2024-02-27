@@ -51,7 +51,7 @@ export default function RandomColor() {
       >
         Generate Random Color
       </button>
-      <div
+      <div    
         style={{
           display: "flex",
           justifyContent: "center",
