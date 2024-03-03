@@ -9,6 +9,7 @@ import TabTest from './Components/custom-tabs/tab-test';
 import ModalTest from './Components/custome-modal-popup/modal-test';
 import GithubProfileFinder from './Components/github-profile-finder';
 import RandomColor from './Components/random-color';
+import SearchFilter from './Components/search-filter';
 
 import TreeView from './Components/tree-view';
 import UseOnclickOutsideTest from './Components/use-outside-click/test';
@@ -40,7 +41,9 @@ function App() {
     // <Instagram/>
 
 
-    <SideBarOpen/>
+    // <SideBarOpen/>
+
+    <SearchFilter/>
   )
 }
 
