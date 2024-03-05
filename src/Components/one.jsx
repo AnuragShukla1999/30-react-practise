@@ -15,6 +15,7 @@ const one = () => {
 
   return (
     <div>one</div>
+     <div>two</div>
   )
 }
 
