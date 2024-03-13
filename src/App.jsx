@@ -1,9 +1,10 @@
 
 import './App.css';
+import Pagination from './Components/pagination';
 // import Calculator from './Components/Calculator/Calculator';
 // import ChatApp from './Components/ChatApp/ChatApp';
 // import ProductList from './Components/Ecommerce/ProductList';
-import ShoppingCart from './Components/Ecommerce/ShoppingCart';
+// import ShoppingCart from './Components/Ecommerce/ShoppingCart';
 // import Instagram from './Components/Instagram-Search-Profile/Index';
 // import InstagramSearchProfile from './Components/Instagram-Search-Profile/Index';
 // import Modal from './Components/Modal/Modal';
@@ -25,8 +26,11 @@ import ShoppingCart from './Components/Ecommerce/ShoppingCart';
 
 function App() {
 
+  const yourData = Array.from({ length: 100 }, (_, index) => `Item ${index + 1}`);
+
   return (
-    // <Accordian/>
+    <>
+      {/* // <Accordian/>
     // <ModalTest/>
     // <TabTest/>
 
@@ -64,7 +68,17 @@ function App() {
     // <ChatApp/>
 
     // <ProductList/>
-    <ShoppingCart/>
+    // <ShoppingCart/> */}
+
+      <Pagination data={yourData} itemsPerPage={10} />
+
+      <br />
+      <br /> 
+
+      <div>
+        {yourData}
+      </div>
+    </>
   )
 }
 
